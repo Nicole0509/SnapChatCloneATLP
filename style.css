@@ -8,10 +8,12 @@
     --yellow: #fffc00;
     --black:#000000;
     --grey: #bbbbbb;
+    --white: #ffffff;
+    --blue: #0d46d9;
 }
 
 body{
-    background-color: #fff;
+    background-color: #e4e3e3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,8 +22,9 @@ body{
 .interface{
     border:  solid red 1px;
     width: 375px;
-    max-height: 812px;
-    
+    height: 812px;
+    margin: 20px 400px;
+    background-color: #fff;
 }
 
 .interface .heading{
@@ -53,15 +56,17 @@ body{
     margin: 10px;
 }
 
-.interface .mainboard button{
+.interface .mainboard button,
+.interface .mainboard form #loging{
     width: 228px;
-    height: 50px;
+    height: 48px;
     border-radius: 50px;
     font-size: 16px;
     font-weight: 400;
     color: var(--yellow);
     background-color: var(--black);
     margin: 10px 0;
+    border:none;
 }
 
 .interface .mainboard #p1{  
@@ -76,15 +81,44 @@ body{
     font-size: 18px;
 }
 
+.interface .mainboard form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .interface .mainboard form #input{
     margin: 5px;
     width: 263px;
     max-height: 38px;
-    border-bottom: solid var(--black) 1px;
+    border-bottom: solid var(--black) 1.3px;
     padding-bottom: 3px;
-    margin: 50px;
+    margin: 25px;
 }
 
 .interface .mainboard form #input input{
     border: none;
+    border-style: none;
+}
+
+.interface .mainboard form #p3{
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+    margin: -15px -150px 30px 0;
+}
+
+.interface .mainboard form #loging{
+    color:var(--white) ;
+    background-color: var(--grey);
+    border: none;
+    margin: 30px;
+    font-weight: 600;
+}
+
+.interface .mainboard #p4{
+    font-size: 10px;
+    /* margin-bottom: 150px; */
 }
