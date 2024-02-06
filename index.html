@@ -5,20 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in to SnapChat</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="interface">
         <div class="heading">
-            icon
+            <i>icon</i>
         </div>
         <div class="mainboard">
             <h3>Welcome Back!</h3>
             <button>Log In via Google</button>
-            <p>Trouble logging In?</p>
+            <p id="p1">Trouble logging In?</p>
+            <p id="p2">OR</p>
             <form action="#">
-                <input type="text" placeholder="USERNAME OR EMAIL">
-                <br>
-                <input type="password" placeholder="PASSWORD">
+                <div id="input">
+                    <input type="text" placeholder="USERNAME OR EMAIL">
+                </div>
+                <div id="input">
+                    <input type="password" placeholder="PASSWORD">
+                </div>
                 <p>Forget password?</p>
                 <input type="submit" value="Log In">
             </form>
